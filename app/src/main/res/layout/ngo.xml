@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="15dp"
+    android:elevation="5dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#2a2a2a"
+    android:layout_marginStart="16dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ngoimage"
+            android:layout_width="126dp"
+            android:layout_height="125dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/government_building" />
+
+        <TextView
+            android:id="@+id/ngoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_empty_rounded"
+            android:text="Government NGO"
+            android:textColor="#2a2a2a"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/ngono"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ngoimage" />
+
+        <TextView
+            android:id="@+id/ngono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/asap_bold"
+            android:text="256 NGO's available"
+            android:textColor="#2a2a2a"
+            android:textSize="8sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ngoname" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
